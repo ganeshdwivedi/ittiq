@@ -13,9 +13,10 @@ const Footer = () => {
     const footerLinkcss = "text-[14px] font-[400] lg:hover:scale-110 hover:font-[600]"
 
     const [toggle, setToggle] = useState(false);
-
+    const [email, SetEmail] = useState("");
+    console.log(email)
     const Show = () => {
-        setToggle(true);
+        setToggle(true)
         setTimeout(() => setToggle(false), 3000)
     }
 
@@ -44,17 +45,17 @@ const Footer = () => {
                 <div className='text-right'>
                     <p className='mr-2'>Subscribe</p>
                     <div className='bg-white flex flex-row overflow-hidden rounded-[25px]'>
-                        <input type='text' className='text-black w-full lg:w-[182px] lg:pl-[10px] border-0' />
-                        <button onClick={Show} href="#_" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out bg-[#FD4A36] rounded-full shadow-md group">
-                            <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-blue-500 group-hover:translate-x-0 ease">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        <input value={email} onChange={(e) => SetEmail(e.target.value)} type='text' className='text-black w-full lg:w-[182px] lg:pl-[10px] border-0' />
+                        <button onClick={Show} className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out bg-[#FD4A36] rounded-full shadow-md group">
+                            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-blue-500 group-hover:translate-x-0 ease">
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </span>
-                            <span class="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease">Subscribe</span>
-                            <span class="relative invisible">Subscribe</span>
+                            <span className="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease">Subscribe</span>
+                            <span className="relative invisible">Subscribe</span>
                         </button>
 
                     </div>
-                    <p className={toggle ? "block text-green-400" : "hidden"}>Thankyou for your subscribing</p>
+                    <p className={toggle ? "text-[14px] text-green-400" : "text-red-500 hidden text-[14px]"}>{email != "" ? "Thankyou for your subscribing" : "please enter valid email"}</p>
                 </div>
             </div>
             <div className='text-white py-[28px] gap-x-10 flex flex-col lg:flex-row justify-between'>
