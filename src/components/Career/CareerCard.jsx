@@ -21,9 +21,9 @@ const CareerCard = () => {
                     <div className='flex flex-row gap-x-1 items-center'><FileDownloadOutlinedIcon /> <p className='text-[#ACACAC] text-[11px] md:text-[14px]'>250 Sales</p></div>
                 </div>
             </div>
-            <button className="rounded-[13px] mx-2 text-white px-[45px] py-[14px]  bg-[#FD4A36] relative  group overflow-hidden font-medium inline-block">
-                <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-blue-400 group-hover:h-full opacity-90"></span>
-                <span className="relative group-hover:text-white">Apply Now</span>
+            <button className="rounded-[13px] mx-2  px-[45px] py-[14px] bg-[#FD4A36] text-white   relative  group overflow-hidden font-medium inline-block">
+                <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#cc2e1d] group-hover:h-full opacity-90"></span>
+                <span class="relative group-hover:text-white">Apply Now</span>
             </button>
         </div>
     )

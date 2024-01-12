@@ -10,8 +10,8 @@ import CareerCard from './CareerCard'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Slide } from 'react-awesome-reveal';
-import RectangleSVG from '@/assets/RectangleSVG';
-import RectangleRight from '@/assets/RectangleRight';
+// import RectangleSVG from '@/assets/RectangleSVG';
+// import RectangleRight from '@/assets/RectangleRight';
 
 const ChooseYourCareer = () => {
 
@@ -28,8 +28,8 @@ const ChooseYourCareer = () => {
     return (
 
         <div className='py-[60px] relative flex flex-col overflow-hidden px-[30px]'>
-            <RectangleSVG className={"left-30 lg:block hidden top-52"} />
-            <RectangleRight className={"right-[0rem] lg:block hidden  top-52"} />
+            {/* <RectangleSVG className={"left-30 lg:block hidden top-52"} />
+            <RectangleRight className={"right-[0rem] lg:block hidden  top-52"} /> */}
 
             <div className='absolute top-[26rem] z-50 2xl:left-[3vw] flex-row xl:flex hidden lg:gap-x-[85vw]'>
                 <div className='hover:shadow-md p-5 rounded-full' onClick={prevHandler}><ArrowBackIosIcon className='text-[#FD4A36]' /></div>
@@ -84,7 +84,7 @@ const ChooseYourCareer = () => {
                     </div>
                 </Slide >
             </div>
-            <button className='bg-[#292B2C] hover:shadow-lg self-center my-[32px] rounded-[13px] lg:px-[45px] lg:py-[11px] px-[20px] py-[7px] lg:text-[16px] font-[600] text-[14px] text-white'>View all</button>
+            <button className='bg-[#292B2C] hover:bg-white hover:border hover:border-black hover:text-black hover:shadow-lg self-center my-[32px] rounded-[13px] lg:px-[45px] lg:py-[11px] px-[20px] py-[7px] lg:text-[16px] font-[600] text-[14px] text-white'>View all</button>
         </div>
 
     )

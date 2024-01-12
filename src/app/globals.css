@@ -66,9 +66,20 @@ left:-10px
 .CareerSwiper .swiper-wrapper .swiper-slide {
         scale: 0.82;
     }
+    .hero-img{
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+ .CareerSwiper .swiper-wrapper .swiper-slide::after {
+            scale: 0.82;
+            position: absolute;
+          opacity: 0.6;
+        }
 
     .CareerSwiper .swiper-wrapper .swiper-slide.swiper-slide-next {
         scale: 0.95;
+        opacity: 1;
     }
 }
 

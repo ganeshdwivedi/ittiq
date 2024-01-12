@@ -17,7 +17,7 @@ function Navbar() {
     }, [isSticky])
 
     const navlinkcss =
-        "text-[14px] text-white text-[#666680] font-[400] hover:underline decoration-black decoration-2 underline-offset-8";
+        "text-[14px] text-white text-[#666680] font-[400] hover:underline decoration-white decoration-2 underline-offset-8 ";
     const mobNavlinkcss =
         "text-[25px] font-medium hover:underline decoration-black decoration-2 underline-offset-8";
 
@@ -40,7 +40,7 @@ function Navbar() {
                             <li className={`${navlinkcss}`}>
                                 Program & Courses
                             </li>
-                            <li className={`${navlinkcss}`}>
+                            <li className={`${navlinkcss} underline decoration-white underline-offset-8 decoratio`}>
                                 About Us
                             </li>
                             <li className={`${navlinkcss}`}>
@@ -50,7 +50,11 @@ function Navbar() {
                     </div>
 
 
-                    <div className="flex flex-row gap-5"> <button className={{ isSticky } ? ' text-[16px] border text-[#FD4A36] font-[600] lg:px-[45px] lg:py-[11px] bg-white py-3 px-5 rounded-[13px]' : ' text-[16px] text-[#FD4A36] font-[600] lg:px-[45px] lg:py-[11px] bg-white  py-3 px-5 rounded-[13px]'}>Apply</button>
+                    <div className="flex flex-row gap-5">
+                        <button className="rounded-[13px] mx-2 bg-white px-[45px] py-[14px]  text-[#FD4A36] relative  group overflow-hidden font-medium inline-block">
+                            <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#FD4A36] group-hover:h-full opacity-90"></span>
+                            <span class="relative group-hover:text-white">Apply</span>
+                        </button>
                         <button
                             onClick={Toggle}
                             className="text-black block lg:hidden Hamburger "

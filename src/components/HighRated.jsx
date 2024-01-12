@@ -17,8 +17,11 @@ const HighRated = () => {
                 <p className='text-[#010305] mt-[15px] text-[16px] lg:text-[24px] font-[600]'>BE AMBITIOUS. BE VULNERABLE. BE YOU</p>
                 <p className='text-[#797C7F] font-[300] mt-[18px] lg:mt-[24px] text-[14px] lg:text-[16px]'>In addition to its training programs, ITTIQ offers a rich and varied social experience and other support systems where you’ll find outlets for creative expression and be your true self.</p>
                 <div className='mt-[40px] lg:mt-[60px] flex flex-row gap-x-5 lg:gap-x-10'>
-                    <button className='rounded-[13px] hover:bg-[#d13423] lg:text-[15px] text-[13px] font-medium text-white px-[10px] py-[7px] lg:px-[45px] lg:py-[14px]  bg-[#FD4A36]'>How We Work</button>
-                    <button className='lg:text-[15px] animate-bounce rounded-md translate-x-0 delay-100 text-[13px] font-medium'> <PhoneInTalkIcon /> +229-54335532</button>
+                    <button className="rounded-[13px] mx-2  px-[45px] py-[14px] bg-[#FD4A36] text-white   relative  group overflow-hidden font-medium inline-block">
+                        <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#cc2e1d] group-hover:h-full opacity-90"></span>
+                        <span class="relative group-hover:text-white">How We Work</span>
+                    </button>
+                    <button className='lg:text-[15px] border-[#FD4A36] hover:border p-2 animate-bounce rounded-md translate-x-0 delay-100 text-[13px] font-medium'> <PhoneInTalkIcon /> +229-54335532</button>
                 </div>
             </div>
         </div>
