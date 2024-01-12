@@ -22,7 +22,7 @@ const Footer = () => {
 
     return (
         <div className='bg-black  px-[30px] overflow-hidden mt-[66px] xl:px-[158px]'>
-            <div className='flex  flex-col :py-[28px] lg:flex-row justify-between lg:items-center'>
+            <div className='flex  flex-col py-[28px] lg:flex-row justify-between lg:items-center'>
                 <Logo className={"w-[132px]"} />
                 <div className='flex flex-col pt-2 pb-4 lg:py-0 gap-y-5 lg:flex-row gap-x-12 text-white'>
                     <p className={footerLinkcss}>Quick Links</p>
