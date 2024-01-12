@@ -17,7 +17,7 @@ function Navbar() {
     }, [isSticky])
 
     const navlinkcss =
-        "text-[14px] text-white text-[#666680] font-[400] hover:underline decoration-white decoration-2 underline-offset-8 ";
+        "text-[14px] pt-4 hover:border-white hover:border-t-4 text-white text-[#666680] font-[400] ";
     const mobNavlinkcss =
         "text-[25px] font-medium hover:underline decoration-black decoration-2 underline-offset-8";
 
@@ -26,7 +26,7 @@ function Navbar() {
             <nav className="relative">
                 <div className={{ isSticky } ? "flex absolute  w-full z-40 flex-row justify-between xl:px-[160px] py-[10px] lg:py-[19px] items-center px-[30px]" : "flex w-full z-40 flex-row absolute justify-between xl:px-[160px] xl:py-[19px] items-center px-[30px]"}>
                     <Logo className={"xl:w-[108px] w-[80px] xl:h-[42px]"} />
-                    <div className="lg:block hidden">
+                    <div className="lg:block hidden -mt-6">
                         <ul className="flex flex-row gap-x-[24px]">
                             <li className={navlinkcss}>
                                 Home
@@ -40,7 +40,7 @@ function Navbar() {
                             <li className={`${navlinkcss}`}>
                                 Program & Courses
                             </li>
-                            <li className={`${navlinkcss} underline decoration-white underline-offset-8 decoratio`}>
+                            <li className={`${navlinkcss} `}>
                                 About Us
                             </li>
                             <li className={`${navlinkcss}`}>
@@ -51,7 +51,7 @@ function Navbar() {
 
 
                     <div className="flex flex-row gap-5">
-                        <button className="rounded-[13px] mx-2 bg-white px-[45px] py-[14px]  text-[#FD4A36] relative  group overflow-hidden font-medium inline-block">
+                        <button className="rounded-[13px] border mx-2 bg-white lg:px-[45px] px-[25px] py-[7px] lg:py-[14px]  text-[#FD4A36] relative  group overflow-hidden font-medium inline-block">
                             <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#FD4A36] group-hover:h-full opacity-90"></span>
                             <span class="relative group-hover:text-white">Apply</span>
                         </button>
@@ -92,9 +92,7 @@ function Navbar() {
                             </ul>
                         </div>
 
-                        <div className="lg:hidden block flex-col my-2">
 
-                        </div>
                     </div >
 
                 </ Slide>

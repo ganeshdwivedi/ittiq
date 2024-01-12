@@ -61,6 +61,13 @@ left:-10px
 .CareerCard{
     box-shadow: 15px 0px 50px 0px rgba(128, 158, 249, 0.30);
 }
+@media screen and (max-width:780px) {
+    .hero-img {
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+}
 
 @media  screen and (min-width:1024px) {
 .CareerSwiper .swiper-wrapper .swiper-slide {

@@ -6,9 +6,9 @@ import Design from './Students/Design';
 const HighRated = () => {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[90px] place-items-center px-[30px] py-[66px] xl:px-[158px] overflow-hidden'>
-            <div className='xl:w-[520px] relative lg:h-[642px]'>
+            <div className='xl:w-[520px] overflow-hidden lg:overflow-visible 2xl:w-[35vw] lg:w-[35vw] w-[90vw] h-[60vh] relative lg:h-[642px]'>
                 <img className='w-full h-full object-cover' src='https://s3-alpha-sig.figma.com/img/ee07/512b/7e4fe8ccf920af387cdc597e220c7d46?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nyrGmS258pr4jJwHge0qXdSQ4p~b4jPJGo3A8xgpwlSAlDSXouei45bbVaoo3KEXifRzssyWK0gmK~k7jiqr3xik6GVOH1pQ8Gbnp2mg~DNBvmD2ywFvRa4aKtunf7wJF8tejvHVBcNt-MboAfUU4OgeVk6bLmN60-W-wNA2SSEltzx~jyNUbs-DBxB1SaCvxOBDO5MRRs6kERTVta80VPp9Rd4Q4MsvqJK2hrLQejLTeP5ovlcsGx26xVL77pYuR0YnX~6rc~eHHq7gEFH~7TrJzcp20m1Po5iBBaJwGr6Us1L~-ecyWkao1pQmMx~gF0mFHOW3p4R36RYKMRcQjA__' alt='' />
-                <Design className={"bottom-0 -right-10"} />
+                <Design className={"bottom-0 right-0 lg:bottom-0 lg:-right-10 "} />
             </div>
             <div className='mt-[40px] lg:mt-0'>
                 <p className='text-[#FD4A36] font-[600] text-[14px] lg:text-[16px]'>High Rated</p>

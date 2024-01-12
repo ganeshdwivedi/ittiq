@@ -22,9 +22,9 @@ const Footer = () => {
 
     return (
         <div className='bg-black  px-[30px] overflow-hidden mt-[66px] xl:px-[158px]'>
-            <div className='flex  flex-col py-[28px] lg:flex-row justify-between lg:items-center'>
+            <div className='flex  flex-col :py-[28px] lg:flex-row justify-between lg:items-center'>
                 <Logo className={"w-[132px]"} />
-                <div className='flex flex-col py-4 lg:py-0 gap-y-5 lg:flex-row gap-x-12 text-white'>
+                <div className='flex flex-col pt-2 pb-4 lg:py-0 gap-y-5 lg:flex-row gap-x-12 text-white'>
                     <p className={footerLinkcss}>Quick Links</p>
                     <p className={footerLinkcss}>Home</p>
                     <p className={footerLinkcss}>Admission</p>
@@ -34,7 +34,7 @@ const Footer = () => {
                     <p className={footerLinkcss}>Careers</p>
                 </div>
             </div>
-            <div className=' text-white py-4 lg:py-[28px] flex flex-col lg:flex-row justify-between lg:items-center'>
+            <div className=' text-white py-4 lg:py-[28px]  md:grid md:grid-cols-2 flex flex-col lg:flex lg:justify-between lg:items-center lg:flex-row '>
                 <p className="text-[16px] cursor-pointer text-white font-[600]">Canada<br />
                     Chemin D’aigremont<br />
                     Lorraine Quebec<br />
@@ -44,7 +44,7 @@ const Footer = () => {
                 <div className='flex flex-row items-center gap-x-[25px]'><EmailSVG /> <p className="text-[16px] cursor-pointer text-white font-[600]">info@email.com</p></div>
                 <div className='text-right'>
                     <p className='mr-2'>Subscribe</p>
-                    <div className='bg-white flex flex-row overflow-hidden rounded-[25px]'>
+                    <div className='bg-white items-center flex flex-row overflow-hidden rounded-[25px]'>
                         <input value={email} onChange={(e) => SetEmail(e.target.value)} type='text' className='text-black w-full lg:w-[182px] lg:pl-[10px] border-0' />
                         <button onClick={Show} className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out bg-[#FD4A36] rounded-full shadow-md group">
                             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#cc2e1d] group-hover:translate-x-0 ease">
@@ -58,9 +58,9 @@ const Footer = () => {
                     <p className={toggle ? "text-[14px] text-green-400" : "text-red-500 hidden text-[14px]"}>{email != "" ? "Thankyou for your subscribing" : "please enter valid email"}</p>
                 </div>
             </div>
-            <div className='text-white py-[28px] items-center gap-x-10 flex flex-col lg:flex-row justify-between'>
+            <div className='text-white py-[28px] lg:items-center gap-x-10 flex flex-col lg:flex-row justify-between'>
                 <div><p className='text-[16px] inline-block font-[600] text-[#CFCFCF] cursor-pointer'>loremipsum© 2023. All Rights Reserved.</p></div>
-                <div className='grid grid-rows-1 gap-y-10 gap-x-0 lg:gap-x-5 lg:grid-cols-4'>
+                <div className='grid my-4 lg:my-0 grid-rows-1 gap-y-10 gap-x-0 lg:gap-x-5 lg:grid-cols-4'>
                     <p className="text-[14px] cursor-pointer text-white hover:scale-110 font-[400]">Privacy Policy</p>
                     <p className="text-[14px] cursor-pointer font-[400] text-white hover:scale-105">Terms & Condition </p>
                     <p className="text-[14px] cursor-pointer font-[400] text-white hover:scale-105">Site Map</p>

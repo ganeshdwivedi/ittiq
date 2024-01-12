@@ -63,20 +63,23 @@ const WhatOurStudent = () => {
                         spaceBetween: 10,
                     },
                     460: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                         spaceBetween: 10,
+                        centeredSlides: true
                     },
                     768: {
                         slidesPerView: 2,
-                        spaceBetween: 10,
+                        spaceBetween: 20,
+                        centeredSlides: true
                     },
                     1024: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 10,
                     },
                     1200: {
                         slidesPerView: 4,
-                        spaceBetween: 30
+                        spaceBetween: 30,
+                        centeredSlides: false
                     },
                 }}
                 coverflowEffect={{

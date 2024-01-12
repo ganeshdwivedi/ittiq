@@ -18,9 +18,6 @@ const Hero = () => {
 
             description: 'Escape the chaos and immerse yourself in serenity with our curated selection of peaceful getaways. Explore idyllic destinations that rejuvenate your mind and soothe your soul.'
         }, {
-            imgsrc: 'https://img.freepik.com/free-photo/front-view-smiley-man-pointing-side_23-2148946252.jpg?w=826&t=st=1705056593~exp=1705057193~hmac=a2a3ab36fbc7ccca6919673471f8041950afc8780be01c81fbaed40705a3bf94', description: 'Embark on a gastronomic adventure with our handpicked collection of culinary delights. Savor the diverse tastes of global cuisine and elevate your dining experience.'
-        }
-        , {
             imgsrc: 'https://img.freepik.com/free-photo/smiling-happy-indian-student-with-backpack-pointing-his-finger-wall_496169-1532.jpg?w=740&t=st=1705056621~exp=1705057221~hmac=fad32f3747d2bbf63ee7e6b7428da6d5c02847304fb301f1a76b2a3b121b9fba', description: "Immerse yourself in a world of artistic inspiration. Uncover spaces that celebrate creativity, from vibrant art scenes to musical havens. Let your imagination thrive in these cultural hotspots."
         }
         , {
@@ -57,7 +54,7 @@ const Hero = () => {
                                 <div className='grid grid-cols-2 mb-[106px] place-items-center mt-[43px]'>
                                     <button className='lg:px-[45px] hover:bg-white hover:bg-opacity-20 text-[14px] px-[20px] py-[7px] lg:text-[16px] font-[600] lg:py-[14px] rounded-[13px] border border-white'>Apply Now</button>
 
-                                    <button className="rounded-[13px] mx-2  px-[45px] py-[14px] bg-[#FD4A36] text-white   relative  group overflow-hidden font-medium inline-block">
+                                    <button className="rounded-[13px] mx-2  px-[45px] py-[14px] bg-[#FD4A36] text-white   relative text-[14px] lg:text-[16px] group overflow-hidden font-medium inline-block">
                                         <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#cc2e1d] group-hover:h-full opacity-90"></span>
                                         <span class="relative group-hover:text-white">Browse Courses</span>
                                     </button>
