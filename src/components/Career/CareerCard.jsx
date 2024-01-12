@@ -22,8 +22,8 @@ const CareerCard = () => {
                 </div>
             </div>
             <button className="rounded-[13px] mx-2 text-white px-[45px] py-[14px]  bg-[#FD4A36] relative  group overflow-hidden font-medium inline-block">
-                <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-blue-400 group-hover:h-full opacity-90"></span>
-                <span class="relative group-hover:text-white">Apply Now</span>
+                <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-blue-400 group-hover:h-full opacity-90"></span>
+                <span className="relative group-hover:text-white">Apply Now</span>
             </button>
         </div>
     )

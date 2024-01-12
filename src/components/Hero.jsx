@@ -47,8 +47,8 @@ const Hero = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="HeroSwipper"
             >
-                {Data.map((item) =>
-                    <SwiperSlide>
+                {Data.map((item, index) =>
+                    <SwiperSlide key={index}>
                         <div style={{ backgroundImage: `url(${item.imgsrc})` }} className="w-full lg:h-full h-[550px] bg-no-repeat bg-cover overflow-hidden">
                             <div className=" inset-0 absolute bg-black opacity-40 z-0"></div>
                             <div className='text-white relative pt-[100px] text-center lg:pt-[179px] z-10 grid grid-cols-1 place-items-center px-[30px] xl:px-[366px]'>

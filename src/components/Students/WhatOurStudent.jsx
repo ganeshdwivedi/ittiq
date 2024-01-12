@@ -99,17 +99,15 @@ const WhatOurStudent = () => {
                 }}
                 modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
                 className="StudentSwipper">
-                {Data.map((item) =>
-                    <SwiperSlide>
+                {Data.map((item, index) =>
+                    <SwiperSlide key={index}>
                         <div className='lg:w-[412px] p-1 lg:h-[241px] shadow-md pl-[27px] py-[23px] place-items-center'>
-                            <p>“Complete account of the system and expound the actual
-                                Contrary to popular belief, Lorem Ipsum is not simply
-                                random text. It has roots”</p>
+                            <p>“{item.title}”</p>
                             <div className='flex flex-row mt-[20px] gap-5 lg:mt-[58px]'>
-                                <img className='w-10 h-10 rounded-full' src='https://s3-alpha-sig.figma.com/img/12cd/40ee/0f25971de5708cd6d7f344f617c24a8e?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=R39yWmgnfRvemZ-lRCh-ZcJdHWNQ311lo8aBpsvPmyMbaX79WQEmGsNGch1RcS~jwEXYSH4nADFdMGoKVLZGUUA--Ue1aovZO8dCgissmIQoK51QB2wFax~k9uFZpnzYKWs7lRImQtZivVcru~qsHw1ovqToHyWWf5v7egFONyax~qPl5-WCm0odboq~npmuenN9Gys5i1QI3D01zlIkHZU9Qdbys8Rxv1-G65S4JgDFjTJYmfsEKVB3CARRS~yxOC1RqnP6d1uLIDTBz-yjejV-GHPESxNzhgFfZvuzpWWZvXgtorZLrmLGREiRR8t-b3IC5iEix8r6owBGXVc3cQ__' alt='' />
+                                <img className='w-10 h-10 rounded-full' src={item.imgsrc} alt='' />
                                 <div>
-                                    <p className='text-[#353535] text-[14px] lg:text-[16px] font-[600]'>Dannette P. Cervantes</p>
-                                    <p className='text-[#353535] text-[12px] lg:text-[14px]'>Web design</p>
+                                    <p className='text-[#353535] text-[14px] lg:text-[16px] font-[600]'>{item.name}</p>
+                                    <p className='text-[#353535] text-[12px] lg:text-[14px]'>{item.desig}</p>
                                 </div>
                             </div>
                         </div>

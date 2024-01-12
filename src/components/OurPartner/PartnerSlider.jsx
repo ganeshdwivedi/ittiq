@@ -40,8 +40,8 @@ const PartnerSlider = () => {
                     }}
                     modules={[Autoplay, Pagination, Navigation]}
                     className="PartnerSwiper">
-                    {Data.map((item) =>
-                        <SwiperSlide>
+                    {Data.map((item, index) =>
+                        <SwiperSlide key={index}>
                             <img className='w-20 lg:w-[132px]' src={item.imgsrc} alt='' />
                         </SwiperSlide>
                     )}
