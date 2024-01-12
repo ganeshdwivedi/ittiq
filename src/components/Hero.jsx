@@ -56,7 +56,11 @@ const Hero = () => {
                                 <p className='text-[16px] mt-[30px] font-[300]'>{item.description}</p>
                                 <div className='grid grid-cols-2 mb-[106px] place-items-center mt-[43px]'>
                                     <button className='lg:px-[45px] hover:bg-white hover:bg-opacity-20 text-[14px] px-[20px] py-[7px] lg:text-[16px] font-[600] lg:py-[14px] rounded-[13px] border border-white'>Apply Now</button>
-                                    <button className='lg:px-[45px] lg:py-[14px] text-[14px] px-[20px] py-[7px] hover:bg-[#f85e4d] hover:text-black bg-[#FD4A36] text-white rounded-[13px] lg:text-[16px] font-[600]'>Browse Courses</button>
+
+                                    <button className="rounded-[13px] mx-2 text-white px-[45px] py-[14px]  bg-[#FD4A36] relative  group overflow-hidden font-medium inline-block">
+                                        <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-blue-400 group-hover:h-full opacity-90"></span>
+                                        <span class="relative group-hover:text-white">Browse Course</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
